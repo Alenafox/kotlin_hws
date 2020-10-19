@@ -16,7 +16,7 @@ fun readCOW(path: String): MutableList<String> {
     return arr
 }
 
-fun getLoopBlocks(source: MutableList<String>): HashMap<Int, Int>{ //если цикл, то есть в сообщении скобки [.......]
+fun getLoopBlocks(source: MutableList<String>): HashMap<Int, Int>{ //если цикл, то есть в сообщении MOO....moo
     val blocks = HashMap<Int, Int>()
     val stack = mutableListOf<Int>()
     for ((i, char) in source.withIndex()){
